@@ -1,11 +1,9 @@
 require 'pry'
 
-katz_deli = ["Michael", "Jean"]
+deli = []
 
-def line(katz_deli)
-    if katz_deli.empty? then puts "The line is currently empty."
-    else puts "The line is currently: #{katz_deli.join(" ")}"
-    binding.pry
+def line(deli)
+    if deli.empty? then puts "The line is currently empty."
     end
 end
 =begin
@@ -14,6 +12,3 @@ def take_a_number(katz_deli, customer_name)
     katz_deli << customer_name
 end
 =end
-
-line(katz_deli)
-
