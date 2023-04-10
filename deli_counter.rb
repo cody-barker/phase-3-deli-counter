@@ -3,10 +3,12 @@ require 'pry'
 deli = []
 
 def line(deli)
-    if deli.empty? then puts "The line is currently empty."
-    else current_line = "The line is currently:"
+    if deli.empty?
+        puts "The line is currently empty."
+    else 
+        current_line = "The line is currently: "
         deli.each.with_index(1) do |customer, i|
-            current_line << " #{i}. #{customer}"
+            current_line << "#{i}. #{customer}"
         end
     end
     puts current_line
